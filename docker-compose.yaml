@@ -1,0 +1,8 @@
+version: "3"
+services:
+  dodns:
+    build: ./
+    environment:
+    - DO_DDNS_DOMAIN=example.org
+    - DO_DDNS_RECORD=@
+    - DO_API_KEY=__your_digitalocean_api_key_here__
